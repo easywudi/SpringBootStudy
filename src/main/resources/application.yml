@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: raymond
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#spring.redis.cache
+  redis:
+    cache: 
+      clusterNodes: 127.0.0.1:6379
+      commandTimeOut: 5000
